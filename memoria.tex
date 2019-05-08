@@ -14,7 +14,7 @@
 \fancyhf{}
 \rfoot{Page \thepage\hspace{1pt} de~\pageref{LastPage}}
 
-\title{}
+\title{Tarea de errores de seguridad en Base de Datos}
 \author{
 Guillermo López García
 \and
@@ -24,16 +24,49 @@ Adrián Dávila Guerra
 \begin{document}
 \maketitle
 
-\textbf{1º Parte. ¿Qué ocurrió?}\\
+\begin{enumerate}[label=\alph*]
+    \item \textbf{1º Parte. ¿Qué ocurrió?}\\
+        Ocurrió una brecha de seguridad en las base de datos de los Hoteles Marriott.
+    En este caso, sucedió que se hubo un acceso indebido directamente a la base
+    de datos, en concreto a la parte que se encargaba de almacenar el
+    sistema de fidelidad Starwood (adquirido poco antes por la cadena de hoteles
+    comprando a la empresa que lo desarrollo). Los datos que se obtuvieron tenían
+    que ver con la reserva y compra de los servicios desde el año 2014 hasta
+    el 10 septiembre de 2018. Dichos datos, iban desde un simple nombre
+    hasta los datos cifrados de las cuentas bancarias.\\
+    El único problema, es que para descrifrar los datos solo hacían
+    falta otros dos factores, y es posible que los atacantes ya los
+    hubieran obtenido.
+    
+    \item \textbf{2º Parte. ¿Qué falló?}\\
+        El acceso fraudulento se dió debido a que las credenciales de acceso
+    al sistema de base de datos estaban relacionadas con la vida personal
+    de los propios administradores.\\
+    Citando a Bimal Gandhi, director ejecutivo de Uniken:
+    `Esta brecha de seguridad subraya la `pura locura'
+    de seguir confiando en métodos de seguridad obsoletos, como el uso de
+    información personal en la autenticación, dada la gran proliferación
+    de datos personales robados y filtrados ahora disponibles en la web
+    oscura'. Además, las claves para descifrar los datos sensibles como
+    las cuentas bancarias estaba en el mismo sistema vulnerado.\\
+    Con lo cual, se dio todas las condiciones para dar en bandeja de plata
+    toda la información personal sensible a los atacantes.
+    
+    \item \textbf{3º Parte. ¿Qué tecnología estaba implicada?}\\
+        Estaba implicada tecnología web y sistemas de base de datos.
+    Los artículos leidos respecto al tema no dejan claro si es
+    una base de datos relacional o NoSQL\@. Respecto a la tecnología
+    web de donde pudieron obtener el fallo inicial para posteriormente
+    acceder de forma directa, tampoco quiere dar detalles la empresa
+    dueña de la cadena de hoteles Marriott.
+    
+    \item \textbf{4º Parte. ¿Comó se pudo haber solucionado?}
+    
+    \item \textbf{5º Parte. ¿Dondé ocurrió?}
+\end{enumerate}
+\end{document}
 
-\textbf{2º Parte. ¿Qué falló?}\\
-
-\textbf{3º Parte. ¿Qué tecnología estaba implicado?}\\
-
-\textbf{4º Parte. ¿Comó se pudo haber solucionado?}\\
-
-\textbf{5º Parte. ¿Dondé ocurrió?}\\
-
+% Ayuda para crear un buen estilo en la memoria.
 %\begin{enumerate}
     %\item \underline{}:
 %\end{enumerate}
@@ -53,4 +86,3 @@ Adrián Dávila Guerra
 %\caption{...}
 %\end{figure}
 
-\end{document}
