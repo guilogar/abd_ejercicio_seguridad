@@ -14,7 +14,7 @@
 \fancyhf{}
 \rfoot{Page \thepage\hspace{1pt} de~\pageref{LastPage}}
 
-\title{Tarea de errores de seguridad en Base de Datos}
+\title{Tarea de errores de seguridad en Administración de Base de Datos}
 \author{
 Guillermo López García
 \and
@@ -60,16 +60,36 @@ Adrián Dávila Guerra
     acceder de forma directa, tampoco quiere dar detalles la empresa
     dueña de la cadena de hoteles Marriott.
     
-    \item \textbf{4º Parte. ¿Comó se pudo haber solucionado?}
-        Una de las principales soluciones se podría dar no utilizando información personal en la autenticación. Gran parte de los usuarios debería haber sido más consciente en no utilizar sus datos personales como medio para autentificar en la base de datos de Starwood Hotels, por lo que, tanto los usuarios como los propios administradores de la base de datos de esta cadena de hoteles se tuvo que tomar medidas para evitar el robo de datos. \\
-Para solucionar este problema debe cumplir lo siguiente:
-...Los usuarios NO deben añadir una fecha de nacimiento como contraseña, número de teléfono, nombre o cualquier dato que se contemple en los datos personales del usuario, incluso de otra información no reflejada en los datos personales en otros medios como las redes sociales.
-...Los usuarios DEBEN utilizar una contraseña que use caracteres con mayúsculas, minúsculas, campos numéricos y símbolos permitidos y correctos (el tipo de formato de codificación de caracteres permitido).
-...Por otro lado, los administradores de la base de datos deben tener en cuenta los riesgos que podría tener el cifrado AES-128.
-...No sólo importa el cifrado de las contraseñas, sino que también se debe tener en cuenta la seguridad del acceso a la base de datos. Por ejemplo, controlar los accesos por IP y ubicación.
+    \item \textbf{4º Parte. ¿Comó se pudo haber solucionado?}\\
+        Una de las principales soluciones se podría dar no utilizando
+    información personal en la autenticación.
+    Gran parte de los usuarios debería haber sido más consciente en no utilizar sus datos
+    personales como medio para autentificar en la base de datos de Starwood Hotels,
+    por lo que, tanto los usuarios como los propios administradores de la base de datos de
+    esta cadena de hoteles se tuvo que tomar medidas para evitar el robo de datos. \\
+    Para solucionar este problema debe cumplir lo siguiente:
+    
+    \begin{itemize}
+        \item Los usuarios NO deben añadir una fecha de nacimiento como contraseña, número de teléfono,
+              nombre o cualquier dato que se contemple en los datos personales del usuario,
+              incluso de otra información no reflejada en los datos personales en otros medios
+              como las redes sociales.
+        \item Los usuarios DEBEN utilizar una contraseña que use caracteres con mayúsculas,
+              minúsculas, campos numéricos y símbolos permitidos y correctos
+              (el tipo de formato de codificación de caracteres permitido).
+        \item Por otro lado, los administradores de la base de datos deben tener en cuenta los
+              riesgos que podría tener el cifrado AES-128.
+        \item No sólo importa el cifrado de las contraseñas, sino que también se debe tener en cuenta
+              la seguridad del acceso a la base de datos. Por ejemplo, controlar los accesos por IP y ubicación.
+    \end{itemize}
 
-    \item \textbf{5º Parte. ¿Dondé ocurrió?}
-    En la cadena de Hoteles Marriott, surgió a el ataque a partir de la red de Starwood Hotels
+    \item \textbf{5º Parte. ¿Dondé ocurrió?} \\
+        En la cadena de Hoteles Marriott, surgió a el ataque a partir de la red de Starwood Hotels
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{./marriott}
+        \caption{Hoteles Marriott}
+        \end{figure}
 \end{enumerate}
 \end{document}
 
